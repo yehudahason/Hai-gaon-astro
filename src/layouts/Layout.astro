@@ -2,6 +2,7 @@
 import "../assets/main.css"
 import Links from "../components/Links.astro"
 import Circle from "../components/Circle.astro"
+
 ---
 
 
@@ -17,18 +18,20 @@ import Circle from "../components/Circle.astro"
 		<title>Astro Basics</title>
 	</head>
 	<body>
+		
      <Links />
 		<slot />
 		<Circle />
 		<Links/>
+
 		<script>
-nl_color = "yellow";
-nl_compact = "1";
-nl_dir = "/nl-files/";
-</script>
+        nl_color = "yellow";
+        nl_compact = "1";
+        nl_dir = "/nl-files/";
+        </script>
+		
 <script
 
 src="/nagishli.js?v=2.3" charset="utf-8" defer></script>
 	</body>
 </html>
-
