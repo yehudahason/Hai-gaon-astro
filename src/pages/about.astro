@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro"
-
+import GoogleForm from "../components/GoogleForm.vue"
 ---
 
 
@@ -15,13 +15,7 @@ import Layout from "../layouts/Layout.astro"
             <a href="mailto:yehudah29@gmail.com">באימייל הזה.</a>
         </p>
         <br />
-        <form action="">
-
-            <label for="google-search">חפש באתר ע"י גוגל </label>
-            <input type="text" placeholder=" חפש .." id="google-search" v-model="search">
-
-            <button @click.prevent="handleclick()" id="btn">חפש</button>
-        </form>
+        <GoogleForm client:load />
         <br />
         <br />
         <form action="https://www.paypal.com/donate" method="post" target="_top">
@@ -38,9 +32,9 @@ import Layout from "../layouts/Layout.astro"
 
         <br />
         <br />
-        <br />
-        <br />
-        <br />
+        
+        
+        
 
     </div>
     <br />
