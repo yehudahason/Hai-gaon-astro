@@ -18,8 +18,9 @@ RUN npm run build
 FROM base AS runtime
 COPY --from=prod-deps /app/node_modules ./node_modules
 COPY --from=build /app/dist ./dist
+COPY server.js .
 
 ENV HOST=0.0.0.0
 ENV PORT=6500
 EXPOSE 6500
-CMD ["node", "./dist/server/entry.mjs"]
+CMD ["node", "server.js"]
