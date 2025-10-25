@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  direction: rtl;
+  background-image: url(./img/Milky_way.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  color: white;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+a.enter {
+  color: rgb(244, 172, 83);
+
+  font-size: 30px;
+}
+b {
+  margin-left: 20px;
+  font-size: 26px;
+}
+h1 {
+  text-align: center;
+  margin: 20px;
+  color: rgb(244, 172, 83);
+}
+h3 {
+  margin: 20px;
+  font-size: 27px;
+  text-align: center;
+}
+
+h4 {
+  color: rgb(244, 172, 83);
+
+  text-align: center;
+}
+
+.index-container {
+  font-family: Arial, Helvetica, sans-serif;
+  direction: rtl;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: auto;
+}
+
+.index-container img {
+  border-radius: 10px;
+}
+
+.home-container {
+  font-family: Arial, Helvetica, sans-serif;
+  direction: rtl;
+  font-weight: bold;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: auto;
+  width: 80vw;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
+}
+.about-container {
+  color: rgb(234, 171, 94);
+  width: 70%;
+  min-height: auto;
+  margin: 35px auto;
+  margin-top: 25px;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
+}
+.about-container a {
+  text-decoration: none;
+  color: rgb(74, 124, 185);
+  margin: 10px;
+}
+input {
+  margin: 0 10px;
+}
+label p {
+  display: inline-block;
+  transform: translateY(-7px);
+}
+.links {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  min-height: auto;
+  display: flex;
+  color: rgb(250, 236, 236);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.links a {
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(247, 233, 233);
+  margin: 10px 25px;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: burlywood;
+}
+.links .router-link-active {
+  color: burlywood;
+}
+
+.links a.active {
+  color: burlywood;
+}
+.roe-links .router-link-active {
+  color: rgb(157, 113, 55);
+}
+
+.roe-links a.active {
+  color: rgb(157, 113, 55);
+}
+.roe-links {
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.roe-links a {
+  margin: 8px 12px;
+  color: rgb(247, 233, 233);
+  cursor: pointer;
+  text-decoration: none;
+}
+.roe-links a:hover {
+  color: rgb(157, 113, 55);
+}
+.index-container a img {
+  height: 470px;
+  margin: 20px;
+}
+.book-container {
+  border-radius: 10px;
+  padding: 30px;
+  background-color: rgb(13, 50, 161);
+  color: rgb(224, 214, 202);
+  width: 80%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  margin: 35px auto;
+  margin-bottom: 40px;
+}
+
+.footer-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+  margin: 100px auto;
+}
+
+.circle1 {
+  position: absolute;
+  left: 60px;
+  height: 100px;
+  width: 100px;
+  background-color: rgb(195, 188, 56);
+  border-radius: 23px;
+  transform: rotate(45deg);
+  animation: rotate1 24s linear infinite;
+}
+
+.circle2 {
+  position: absolute;
+  left: 60px;
+  height: 100px;
+  width: 100px;
+  background-color: rgb(195, 188, 56);
+  border-radius: 23px;
+  animation: rotate2 24s linear infinite;
+}
+
+.banner {
+  margin: 0 auto;
+  width: 100%;
+
+  text-align: center;
+}
+
+.banner b {
+  color: bisque;
+}
+
+button i {
+  color: rgb(64, 64, 228);
+}
+
+button {
+  border-radius: 5px;
+  padding: 1px 6px;
+  border: 0;
+  background-color: rgb(230, 173, 87);
+  color: black;
+  cursor: pointer;
+}
+
+@keyframes rotate1 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate2 {
+  from {
+    transform: rotate(45deg);
+  }
+
+  to {
+    transform: rotate(405deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .book-container,
+  .about-container,
+  .home-container {
+    width: 100%;
+    padding: 25px;
+    font-size: 22px;
+    line-height: 1.5;
+  }
+
+  .links {
+    flex-wrap: wrap;
+  }
+}
