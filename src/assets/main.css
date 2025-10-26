@@ -33,10 +33,12 @@ b {
   font-size: 26px;
 }
 h1 {
+  font-size: 40px;
   text-align: center;
-  margin: 20px;
+  margin: 10px 20px;
   color: rgb(244, 172, 83);
 }
+
 h3 {
   margin: 20px;
   font-size: 27px;
@@ -136,12 +138,28 @@ label p {
 .roe-links a.active {
   color: rgb(157, 113, 55);
 }
+.hai-links a.active {
+  color: rgb(157, 113, 55);
+}
+.hai-links {
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 .roe-links {
   margin-top: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+.hai-links a {
+  margin: 8px 12px;
+  color: rgb(247, 233, 233);
+  cursor: pointer;
+  text-decoration: none;
 }
 .roe-links a {
   margin: 8px 12px;
@@ -150,6 +168,9 @@ label p {
   text-decoration: none;
 }
 .roe-links a:hover {
+  color: rgb(157, 113, 55);
+}
+.hai-links a:hover {
   color: rgb(157, 113, 55);
 }
 .index-container a img {
