@@ -1,51 +1,58 @@
 ---
-import "../assets/main.css"
-import Links from "../components/Links.astro"
-
+import "../assets/main.css";
+import Links from "../components/Links.astro";
 ---
-
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		
-		<title>סדר פתרון חלומות</title>
-	</head>
-	<body>
-		
-     <Links />
-		<slot />
-		
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PL9W9RRMZL"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
+      gtag("config", "G-PL9W9RRMZL");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content="ספר פתרון חלומות לרב האי גאון " />
+    <meta
+      name="keywords"
+      content="dreams, hai gaon, פתרון חלומות, pitron-halomoṭ, רב האי גאון"
+    />
+    <meta name="author" content="Yehuda Hason" />
+    <title>סדר פתרון חלומות</title>
+  </head>
+  <body>
+    <Links />
+    <slot />
 
-<script>
-	//@ts-ignore
-	window.nl_color = "yellow";
-	//@ts-ignore
-  window.nl_compact = "1";
-  //@ts-ignore
-  window.nl_dir = "/nl-files/";
-</script>	
-<script
+    <script>
+      //@ts-ignore
+      window.nl_color = "yellow";
+      //@ts-ignore
+      window.nl_compact = "1";
+      //@ts-ignore
+      window.nl_dir = "/nl-files/";
+    </script>
+    <script src="/nagishli.js?v=2.3" charset="utf-8" defer></script>
 
-src="/nagishli.js?v=2.3" charset="utf-8" defer></script>
+    <script>
+      const links = document.querySelectorAll("a");
+      const current = window.location.pathname;
 
-<script>
-  const links = document.querySelectorAll("a");
-  const current = window.location.pathname;
-
-  links.forEach(link => {
-    if (link.getAttribute("href") === current) {
-      link.classList.add("active");
-    }
-  });
-</script>
-
-
-	</body>
+      links.forEach((link) => {
+        if (link.getAttribute("href") === current) {
+          link.classList.add("active");
+        }
+      });
+    </script>
+  </body>
 </html>
