@@ -186,6 +186,7 @@ label p {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
   margin: 35px auto;
   margin-bottom: 40px;
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.5), -8px 8px 5px rgba(0, 0, 0, 0.5);
 }
 
 .footer-container {
