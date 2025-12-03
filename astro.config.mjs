@@ -21,6 +21,7 @@ export default defineConfig({
     "/roe7.html": "/roe7",
     "/roe8.html": "/roe8",
   },
+
   integrations: [vue()],
   adapter: node({
     mode: "standalone",

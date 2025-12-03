@@ -1,13 +1,8 @@
 ---
-import Layout from "../layouts/Layout.astro"
-import Aboutt from "../components/Aboutt.vue"
+import Layout from "../layouts/Layout.astro";
+import Aboutt from "../components/Aboutt.vue";
 ---
 
-
-<Layout >
-<html>
-  <body>
-    <Aboutt client:only="vue" />
-  </body>
-</html>
+<Layout>
+  <Aboutt client:only="vue" />
 </Layout>
